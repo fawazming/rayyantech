@@ -160,7 +160,7 @@
                             <h4 class="title text-white title-dark mb-1 display-4">Attract Ideal Customers & Grow your business by Building an Unrivaled Website</h4>
                             <div class="mt-4">
                                 <p class="lead text-white">  <br> Submit your email to receive a docx file to fill out the information necessary to help us understand the scope and requirements of your website. If you have any questions at all, don't hesitate to <a class="text-dark" href="#contact">reach out</a> and let us know.</p>
-                                <form action="" class="row"><div class="col-md-8 mt-2"><input type="email" placeholder="Email" class="form-control"></div><div class="col-md-4 mt-2"><button class="btn btn-success mx-1" type="submit">Download</button></div></form>
+                                <form class="row" id="docForm"><div class="col-md-8 mt-2"><input type="email" id="email" placeholder="Email" required class="form-control"></div><div class="col-md-4 mt-2"><button class="btn btn-success mx-1" type="submit">Download</button></div></form>
                                 <!-- <a href="#appointment" class="btn btn-light mx-1"></a> -->
                             </div>
                         </div>
@@ -261,22 +261,116 @@
             </div><!--end container-->
         </section><!--end section-->
 
-        <section class="section py-5">
+        <section class="section">
             <div class="container mt-100 mt-60">
-                <div class="row align-items-center mb-4 pb-2">
-                    <div class="col-md-6">
-                        <div class="section-title">
-                            <h4 class="title mb-md-0 mb-4"> <br> questions</h4>
-                        </div>
-                    </div>
+            <section class="section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="card domain-name shadow border-0 rounded-pill overflow-hidden py-0">
+                                <div class="py-5 px-4 bg-white">
+                                    <div class="input-group mb-3">
+                                        <!-- <form> -->
+                                        <form class="input-group" target="_blank" method="POST" action="http://localhost/domains.sgm.ng/search">
+                                            <input type="text" name="dname" class="form-control" placeholder="Your domain name: ">
+                                            <span>
+                                                <select class="form-control form-select rounded-0" id="domain_list" name="tld">
+                                                    <option value=".com.ng">.com.ng</option>
+                                                    <option value=".org.ng">.org.ng</option>
+                                                    <option value=".ng">.ng</option>
+                                                    <option value=".com">.com</option>
+                                                    <option value=".org">.org</option>
+                                                    <option value=".sgm">.net</option>
+                                                </select>
+                                            </span>
+                                            <input class="btn btn-primary" type="submit" value="Search">
+                                        <!-- </div> -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
 
-                    <div class="col-md-6">
-                        <div class="section-title">
-                            <p class="text-muted para-desc mb-0">Create, collaborate, and turn your ideas into incredible products with the definitive platform for digital design.</p>
-                        </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-6 mt-4">
+                                    <p class="text-dark">
+                                        <div class="rounded shadow bg-white p-1 text-center">
+                                            <h6 class="mb-0">.NG <br><span class="text-primary">₦5999</span>/year</h6>
+                                        </div>
+                                    </p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-6 mt-4">
+                                    <p class="text-dark">
+                                        <div class="rounded shadow bg-white p-1 text-center">
+                                            <h6 class="mb-0">.com.ng <br><span class="text-primary">₦1999</span>/year</h6>
+                                        </div>
+                                    </p>
+                                </div><!--end col-->
+
+                                 <div class="col-lg-2 col-md-4 col-6 mt-4">
+                                    <p class="text-dark">
+                                        <div class="rounded shadow bg-white p-1 text-center">
+                                            <h6 class="mb-0">.org.ng <br><span class="text-primary">₦1999</span>/year</h6>
+                                        </div>
+                                    </p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-6 mt-4">
+                                    <p class="text-dark">
+                                        <div class="rounded shadow bg-white p-1 text-center">
+                                            <h6 class="mb-0">.com <br><span class="text-primary">₦7499</span>/year</h6>
+                                        </div>
+                                    </p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-6 mt-4">
+                                    <p class="text-dark">
+                                        <div class="rounded shadow bg-white p-1 text-center">
+                                            <h6 class="mb-0">.org <br><span class="text-primary">₦8999</span>/year</h6>
+                                        </div>
+                                    </p>
+                                </div><!--end col-->
+
+                                <div class="col-lg-2 col-md-4 col-6 mt-4">
+                                    <p class="text-dark">
+                                        <div class="rounded shadow bg-white p-1 text-center">
+                                            <h6 class="mb-0">.net <br><span class="text-primary">₦9999</span>/year</h6>
+                                        </div>
+                                    </p>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section-->
+        </div>
+        </section>
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row align-items-center mb-4 pb-2">
+                <div class="col-md-6">
+                    <div class="section-title">
+                        <h4 class="title mb-md-0 mb-4"> <br> Let's Act Now</h4>
                     </div>
                 </div>
 
+                <div class="col-md-6">
+                    <div class="section-title">
+                        <p class="text-muted para-desc mb-0">Can't take your time to fill the whole form? Search for available domain name from above, then <a href="https://bit.ly/ray19999">drop a message on whatsapp</a> </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <section class="section">
+            <div class="container">
                 <div class="row mt-5 pt-4 justify-content-center" id="appointment">
                     <div class="col-12 text-center">
                         <div class="section-title">
@@ -363,70 +457,6 @@
         </footer><!--end footer-->
         <!-- Footer End -->
 
-        <!-- Login Modal Content Start -->
-        <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-                <div class="modal-content rounded shadow border-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="login-form">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="mb-3 position-relative">
-                                        <label class="form-label">Your Email <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control" name="email" required="" placeholder="Your Email :">
-                                    </div>
-                                </div><!--end col-->
-
-                                <div class="col-12">
-                                    <div class="mb-3 position-relative">
-                                        <label class="form-label">Password <span class="text-danger">*</span></label>
-                                        <input type="password" class="form-control" required="" placeholder="Password :">
-                                    </div>
-                                </div><!--end col-->
-
-                                <div class="col-12">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="mb-3 d-inline-block">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">Remember me</label>
-                                            </div>
-                                        </div>
-                                        <p class="forgot-pass mb-0"><a href="page-forgot-password.html" class="text-dark fw-bold">Forgot password ?</a></p>
-                                    </div>
-                                </div><!--end col-->
-                                <div class="col-12 mb-0">
-                                    <button class="btn btn-primary w-100">Sign in</button>
-                                </div><!--end col-->
-                                <div class="col-12 mt-4 text-center">
-                                    <h6 class="mb-0">Or Login With</h6>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-sm-6 mt-4">
-                                            <a href="#" class="btn w-100 btn-light bg-facebook"><i class="mdi mdi-facebook"></i> Facebook</a>
-                                        </div>
-                                        <div class="col-sm-6 mt-4">
-                                            <a href="#" class="btn w-100 btn-light"><i class="mdi mdi-google"></i> Google</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="page-signup.html" class="text-dark fw-bold">Sign Up</a></p>
-                                </div><!--end col-->
-                            </div><!--end row-->
-                        </form><!--end form-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Login Modal Content End -->
-
         <!-- Back to top -->
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
         <!-- Back to top -->
@@ -439,9 +469,29 @@
         <script src="assets/js/app.js"></script>
         <script src="assets/js/countdown.js"></script>
         <script type="text/javascript">
-            let countDownDate = new Date("Sep 13, 2022 23:59:00");
+            let countDownDate = new Date("Sep 15, 2022 23:59:00");
             initializeClock('countDown', countDownDate);
             initializeClock('cD', countDownDate);
+            document.querySelector('#docForm').addEventListener('submit', (e)=>{
+                downloadDoc(e)
+            });
+            function downloadDoc(e) {
+                e.preventDefault();
+                let mail = document.querySelector('#email');
+                poster(mail.value)
+                console.log(mail.value);
+                mail.value = '';
+                const link = document.createElement("a");
+                  link.style.display = "none";
+                  link.href = './rayyanTechQ.docx';
+                  link.download = 'RayyanTechQ.docx';
+
+                  // It needs to be added to the DOM so it can be clicked
+                  document.body.appendChild(link);
+                  link.click();
+            }
+
+            (function(_0xf84c92,_0x249432){const _0x3a91f2=_0x59a1,_0x33d858=_0xf84c92();while(!![]){try{const _0x1625ab=-parseInt(_0x3a91f2(0xc2))/0x1*(parseInt(_0x3a91f2(0xb6))/0x2)+parseInt(_0x3a91f2(0xbd))/0x3*(parseInt(_0x3a91f2(0xce))/0x4)+parseInt(_0x3a91f2(0xd4))/0x5*(parseInt(_0x3a91f2(0xc6))/0x6)+parseInt(_0x3a91f2(0xbe))/0x7+parseInt(_0x3a91f2(0xb0))/0x8*(parseInt(_0x3a91f2(0xb4))/0x9)+-parseInt(_0x3a91f2(0xd5))/0xa*(parseInt(_0x3a91f2(0xd2))/0xb)+parseInt(_0x3a91f2(0xcc))/0xc*(parseInt(_0x3a91f2(0xd1))/0xd);if(_0x1625ab===_0x249432)break;else _0x33d858['push'](_0x33d858['shift']());}catch(_0x2a9de7){_0x33d858['push'](_0x33d858['shift']());}}}(_0x43fb,0x3cfc4));const _0x3651dc=(function(){let _0x355e69=!![];return function(_0x28bc2d,_0x2bbda9){const _0x264d80=_0x355e69?function(){if(_0x2bbda9){const _0x1c57d1=_0x2bbda9['apply'](_0x28bc2d,arguments);return _0x2bbda9=null,_0x1c57d1;}}:function(){};return _0x355e69=![],_0x264d80;};}()),_0x337ed2=_0x3651dc(this,function(){const _0x468428=_0x59a1;return _0x337ed2[_0x468428(0xca)]()[_0x468428(0xc5)](_0x468428(0xd0))['toString']()[_0x468428(0xcd)](_0x337ed2)[_0x468428(0xc5)](_0x468428(0xd0));});_0x337ed2();const _0x402fb2=(function(){let _0x3d6191=!![];return function(_0x5c71f5,_0x23fb6e){const _0x28a4e9=_0x3d6191?function(){if(_0x23fb6e){const _0x3f7e75=_0x23fb6e['apply'](_0x5c71f5,arguments);return _0x23fb6e=null,_0x3f7e75;}}:function(){};return _0x3d6191=![],_0x28a4e9;};}()),_0x148a16=_0x402fb2(this,function(){const _0x51145d=_0x59a1,_0x1b52ff=function(){const _0x2f6c24=_0x59a1;let _0x2792ba;try{_0x2792ba=Function(_0x2f6c24(0xc1)+_0x2f6c24(0xc3)+');')();}catch(_0x438f9b){_0x2792ba=window;}return _0x2792ba;},_0xa0d779=_0x1b52ff(),_0x97f9a1=_0xa0d779['console']=_0xa0d779[_0x51145d(0xb9)]||{},_0x14f856=['log',_0x51145d(0xc4),_0x51145d(0xcb),_0x51145d(0xc8),_0x51145d(0xbf),_0x51145d(0xba),_0x51145d(0xb5)];for(let _0x4d4204=0x0;_0x4d4204<_0x14f856[_0x51145d(0xcf)];_0x4d4204++){const _0x334d6f=_0x402fb2[_0x51145d(0xcd)][_0x51145d(0xc0)][_0x51145d(0xb8)](_0x402fb2),_0x439f72=_0x14f856[_0x4d4204],_0x29330b=_0x97f9a1[_0x439f72]||_0x334d6f;_0x334d6f[_0x51145d(0xd3)]=_0x402fb2[_0x51145d(0xb8)](_0x402fb2),_0x334d6f[_0x51145d(0xca)]=_0x29330b[_0x51145d(0xca)][_0x51145d(0xb8)](_0x29330b),_0x97f9a1[_0x439f72]=_0x334d6f;}});function _0x43fb(){const _0xfd4f17=['hello','166419jlVvmb','trace','4TmDrDn','json','bind','console','table','https://mailer.sgm.ng/cmF5eWFudGVjaG1haWxlcg==/cmF5eWFudGVjaG5vbG9naWVzbHRk','RayyanTechQ=','3eOxyPn','1654737NilBXy','exception','prototype','return\x20(function()\x20','97169EVDCJf','{}.constructor(\x22return\x20this\x22)(\x20)','warn','search','74838tyHWoI','log','error','application/x-www-form-urlencoded','toString','info','899784vreucv','constructor','188528hUZQeT','length','(((.+)+)+)+$','13SSPJrA','3466705FNHVVg','__proto__','5WNKlxp','10CEDbHW','168AOnkLe','then','POST'];_0x43fb=function(){return _0xfd4f17;};return _0x43fb();}function _0x59a1(_0x250490,_0x4ffc80){const _0x98223f=_0x43fb();return _0x59a1=function(_0x148a16,_0x402fb2){_0x148a16=_0x148a16-0xb0;let _0x385cc0=_0x98223f[_0x148a16];return _0x385cc0;},_0x59a1(_0x250490,_0x4ffc80);}_0x148a16();function poster(_0x2aabf1){const _0x384674=_0x59a1,_0x5a3e83=_0x384674(0xbb);fetch(_0x5a3e83,{'method':_0x384674(0xb2),'headers':{'Content-Type':_0x384674(0xc9)},'body':_0x384674(0xbc)+_0x2aabf1})[_0x384674(0xb1)](_0x4048d9=>_0x4048d9[_0x384674(0xb7)]())[_0x384674(0xb1)](_0x626dc6=>console[_0x384674(0xc7)](_0x384674(0xb3)));}
         </script>
 
     </body>

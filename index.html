@@ -177,21 +177,19 @@
                             <div class="py-5 px-4 bg-white">
                                 <div class="input-group mb-3">
                                     <!-- <form> -->
-                                    <form class="input-group">
-                                        <input type="text" class="form-control" placeholder="Your domain name: ">
+                                    <form class="input-group" method="POST" action="http://localhost/domains.sgm.ng/search">
+                                        <input type="text" name="dname" class="form-control" placeholder="Your domain name: ">
                                         <span>
-                                            <select class="form-control form-select rounded-0" id="domain_list">
-                                                <option>.com.ng</option>
-                                                <option>.ng</option>
-                                                <option>.com</option>
-                                                <option>.org</option>
-                                                <option>.net</option>
-                                                <option>.sgm</option>
-                                                <option>.ijb</option>
-                                                <option>.abk</option>
+                                            <select class="form-control form-select rounded-0" id="domain_list" name="tld">
+                                                <option value=".com.ng">.com.ng</option>
+                                                <option value=".org.ng">.org.ng</option>
+                                                <option value=".ng">.ng</option>
+                                                <option value=".com">.com</option>
+                                                <option value=".org">.org</option>
+                                                <option value=".sgm">.net</option>
                                             </select>
                                         </span>
-                                        <button class="btn btn-primary" type="button">Search</button>
+                                        <input class="btn btn-primary" type="submit" value="Search">
                                     <!-- </div> -->
                                     </form>
                                 </div>
@@ -220,11 +218,11 @@
                                     </div>
                                 </p>
                             </div><!--end col-->
-                            
-                            <div class="col-lg-2 col-md-4 col-6 mt-4">
+
+                             <div class="col-lg-2 col-md-4 col-6 mt-4">
                                 <p class="text-dark">
                                     <div class="rounded shadow bg-white p-1 text-center">
-                                        <h6 class="mb-0">.com <br><span class="text-primary">₦6999</span>/year</h6>
+                                        <h6 class="mb-0">.org.ng <br><span class="text-primary">₦1999</span>/year</h6>
                                     </div>
                                 </p>
                             </div><!--end col-->
@@ -232,7 +230,7 @@
                             <div class="col-lg-2 col-md-4 col-6 mt-4">
                                 <p class="text-dark">
                                     <div class="rounded shadow bg-white p-1 text-center">
-                                        <h6 class="mb-0">.org <br><span class="text-primary">₦7999</span>/year</h6>
+                                        <h6 class="mb-0">.com <br><span class="text-primary">₦7499</span>/year</h6>
                                     </div>
                                 </p>
                             </div><!--end col-->
@@ -240,15 +238,15 @@
                             <div class="col-lg-2 col-md-4 col-6 mt-4">
                                 <p class="text-dark">
                                     <div class="rounded shadow bg-white p-1 text-center">
-                                        <h6 class="mb-0">.sgm <br><span class="text-primary">₦499</span>/year</h6>
+                                        <h6 class="mb-0">.org <br><span class="text-primary">₦8999</span>/year</h6>
                                     </div>
                                 </p>
                             </div><!--end col-->
-                            
+
                             <div class="col-lg-2 col-md-4 col-6 mt-4">
                                 <p class="text-dark">
                                     <div class="rounded shadow bg-white p-1 text-center">
-                                        <h6 class="mb-0">.ijb <br><span class="text-primary">₦499</span>/year</h6>
+                                        <h6 class="mb-0">.net <br><span class="text-primary">₦9999</span>/year</h6>
                                     </div>
                                 </p>
                             </div><!--end col-->
